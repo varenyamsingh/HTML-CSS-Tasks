@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable Side Navigation</title>
+    <style>
+        /* Adding some basic styling for better visualization */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* The side navigation menu */
+        .sidenav {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            padding-top: 20px;
+            transition: 0.5s;
+        }
+
+        /* Style for the navigation links */
+        .sidenav a {
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        /* Change color on hover */
+        .sidenav a:hover {
+            background-color: #555;
+        }
+
+        /* Style for the content area */
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Side Navigation -->
+    <div class="sidenav">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Content area to give space for the side navigation -->
+    <div class="content">
+        <h2>Main Content Area</h2>
+        <p>This is your main content area. You can add your webpage content here.</p>
+    </div>
+
+</body>
+</html>
